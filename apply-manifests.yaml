@@ -5,7 +5,7 @@ metadata:
   namespace: ibtech-devops
 spec:
   params:
-    - default: src
+    - default: declarationFiles
       description: The directory in source that contains yaml manifests
       name: manifest_dir
       type: string
