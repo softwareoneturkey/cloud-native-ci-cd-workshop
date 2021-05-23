@@ -18,7 +18,7 @@ spec:
       name: git-revision
       type: string
     - default: >-
-        image-registry.openshift-image-registry.svc:5000/sekerbank-devops/nginx-hello-world:latest
+        image-registry.openshift-image-registry.svc:5000/xxx-devops/nginx-hello-world:latest
       description: image to be build from the code
       name: IMAGE
       type: string
