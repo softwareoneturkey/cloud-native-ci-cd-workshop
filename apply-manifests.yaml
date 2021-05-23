@@ -5,7 +5,7 @@ metadata:
   namespace: xxx-devops ## namespace gir
 spec:
   params:
-    - default: src
+    - default: declarationFiles # Folder ismi default'ta bu değiştirebiliriz.
       description: The directory in source that contains yaml manifests
       name: manifest_dir
       type: string
