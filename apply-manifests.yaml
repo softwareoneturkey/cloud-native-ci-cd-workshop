@@ -2,7 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: apply-manifests
-  namespace: xxx-devops ## namespace gir
+  namespace: ibtech-devops
 spec:
   params:
     - default: src

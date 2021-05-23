@@ -2,14 +2,14 @@ apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
   name: build-and-deploy
-  namespace: xxx-devops ## namespace gir
+  namespace: ibtech-devops
 spec:
   params:
     - default: nginx-hello-world
       description: name of the deployment to be patched
       name: deployment-name
       type: string
-    - default: 'https://github.com/AltugYildirim/nginx.git'
+    - default: 'https://github.com/softwareoneturkey/nginx-hello-world.git'
       description: url of the git repo for the code of deployment
       name: git-url
       type: string
@@ -18,7 +18,7 @@ spec:
       name: git-revision
       type: string
     - default: >-
-        image-registry.openshift-image-registry.svc:5000/sekerbank-devops/nginx-hello-world:latest
+        image-registry.openshift-image-registry.svc:5000/ibtech-devops/nginx-hello-world:latest
       description: image to be build from the code
       name: IMAGE
       type: string

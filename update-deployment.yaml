@@ -2,7 +2,7 @@ apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: update-deployment
-  namespace: xxx-devops ## namespace gir
+  namespace: ibtech-devops ## namespace gir
 spec:
   params:
     - description: The name of the deployment patch the image
