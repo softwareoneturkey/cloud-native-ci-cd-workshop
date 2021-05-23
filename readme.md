@@ -3,3 +3,5 @@
 ## check out Cluster Tasks
 ## apply pipeline.yaml
 ## enter parameters default value
+
+## For ArgoCD Task --> https://hub-preview.tekton.dev/detail/3
