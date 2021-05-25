@@ -51,3 +51,8 @@ spec:
       resources: {}
       script: |
         argocd app wait $(params.application-name) --health $(params.flags)
+    - image: 'quay.io/swoturkey/argocd:$(params.argocd-version)'
+      name: deploymentrollout
+      resources: {}
+      script: >
+        argocd app actions run $(params.application-name) restart --kind Deployment
